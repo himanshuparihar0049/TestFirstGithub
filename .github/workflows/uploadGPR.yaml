@@ -1,6 +1,9 @@
 name:upload package to gpr
 
-on: push
+on: 
+  push:
+    branches:
+    - master
 
 jobs:
   publish:
