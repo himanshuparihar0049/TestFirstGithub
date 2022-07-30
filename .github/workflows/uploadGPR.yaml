@@ -1,0 +1,15 @@
+name:upload package to gpr
+
+on: push
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      uses: actions/checkout@v2
+      scope: '@Harry'
+      
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      
